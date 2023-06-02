@@ -7,8 +7,8 @@ mnist = tf.keras.datasets.mnist
 (train_images, train_labels), (test_images, test_labels) = mnist.load_data()
 
 # Preprocess the images
-train_images = train_images / 250.0
-test_images = test_images / 250.0
+train_images = train_images / 255.0
+test_images = test_images / 255.0
 
 # Build the model
 model = tf.keras.Sequential([
